@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Noto_Serif_JP } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
+import FloatingBookingButton from "@/components/FloatingBookingButton";
 
 const notoSerifJP = Noto_Serif_JP({
   subsets: ["latin"],
@@ -34,6 +35,7 @@ export default function RootLayout({
       <body>
         <Navigation />
         {children}
+        <FloatingBookingButton />
       </body>
     </html>
   );
