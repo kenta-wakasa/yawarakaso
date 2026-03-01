@@ -13,6 +13,7 @@ const notoSerifJP = Noto_Serif_JP({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://yawarakaso.vercel.app"),
   icons: { icon: "/logo.svg" },
   title: "泊まれるカフェ やわらかそう | ゲストハウス",
   description:
@@ -22,6 +23,18 @@ export const metadata: Metadata = {
     description: "コーヒーの香りと静かな時間。カフェに泊まる、新しい旅のかたち。",
     type: "website",
     locale: "ja_JP",
+    images: [
+      {
+        url: "/ogp.jpg",
+        width: 1200,
+        height: 630,
+        alt: "泊まれるカフェ やわらかそう",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/ogp.jpg"],
   },
 };
 
